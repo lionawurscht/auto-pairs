@@ -220,7 +220,7 @@ function! AutoPairsInsert(key)
     endif
   endif
 
-  return open.close.s:Left
+  return open.close.repeat(s:Left, strlen(close))
 endfunction
 
 function! AutoPairsDelete()
